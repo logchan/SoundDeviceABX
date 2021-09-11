@@ -23,6 +23,7 @@ namespace SoundDeviceABX {
             shufflePlaylistChk.Checked = state.LastShuffle;
             randomVolumeChk.Checked = state.LastRandomVolume;
             minVolumeBox.Text = state.LastMinVolume;
+            randomABChk.Checked = state.LastRandomAB;
 
             FindAudioDevices(true);
         }
@@ -107,6 +108,7 @@ namespace SoundDeviceABX {
                 ShowResults = showCorrectChk.Checked,
                 RandomVolume = randomVolumeChk.Checked,
                 MinVolume = minVolume,
+                RandomAB = randomABChk.Checked,
             };
             if (shufflePlaylistChk.Checked) {
                 Shuffle(cfg.AudioFiles);
@@ -118,6 +120,7 @@ namespace SoundDeviceABX {
             state.LastShowResults = cfg.ShowResults;
             state.LastShuffle = shufflePlaylistChk.Checked;
             state.LastRandomVolume = cfg.RandomVolume;
+            state.LastRandomAB = cfg.RandomAB;
             if (cfg.RandomVolume) {
                 state.LastMinVolume = minVolumeBox.Text;
             }

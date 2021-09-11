@@ -8,5 +8,6 @@ namespace SoundDeviceABX {
         public bool ShowResults { get; set; }
         public bool RandomVolume { get; set; }
         public float MinVolume { get; set; }
+        public bool RandomAB { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace SoundDeviceABX {
         public bool LastRewind { get; set; }
         public bool LastRandomVolume { get; set; } = true;
         public string LastMinVolume { get; set; } = "0.7";
+        public bool LastRandomAB { get; set; }
 
         private static AppState LoadAppState() {
             try {

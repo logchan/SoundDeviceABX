@@ -41,6 +41,7 @@ namespace SoundDeviceABX {
             this.randomVolumeChk = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.minVolumeBox = new System.Windows.Forms.TextBox();
+            this.randomABChk = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.playFilesNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,7 +158,7 @@ namespace SoundDeviceABX {
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(17, 445);
+            this.startBtn.Location = new System.Drawing.Point(17, 454);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(204, 57);
             this.startBtn.TabIndex = 11;
@@ -212,11 +213,22 @@ namespace SoundDeviceABX {
             this.minVolumeBox.TabIndex = 16;
             this.minVolumeBox.Text = "0.7";
             // 
+            // randomABChk
+            // 
+            this.randomABChk.AutoSize = true;
+            this.randomABChk.Location = new System.Drawing.Point(17, 406);
+            this.randomABChk.Name = "randomABChk";
+            this.randomABChk.Size = new System.Drawing.Size(167, 33);
+            this.randomABChk.TabIndex = 17;
+            this.randomABChk.Text = "Random AB";
+            this.randomABChk.UseVisualStyleBackColor = true;
+            // 
             // InitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 514);
+            this.ClientSize = new System.Drawing.Size(965, 523);
+            this.Controls.Add(this.randomABChk);
             this.Controls.Add(this.minVolumeBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.randomVolumeChk);
@@ -264,6 +276,7 @@ namespace SoundDeviceABX {
         private System.Windows.Forms.CheckBox randomVolumeChk;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox minVolumeBox;
+        private System.Windows.Forms.CheckBox randomABChk;
     }
 }
 

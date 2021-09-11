@@ -66,7 +66,9 @@ namespace SoundDeviceABX {
 
         private void MakeNewProblem(bool nextTrack=true) {
             var rng = Program.Rng;
-            _currentA = rng.Next(2);
+            if (_test.RandomAB) {
+                _currentA = rng.Next(2);
+            }
             _currentX = rng.Next(2);
             _aIsDevice1.Add(_currentA == 0);
             _xIsDevice1.Add(_currentX == 0);
